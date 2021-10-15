@@ -1,0 +1,29 @@
+
+
+#Portafolio{
+background:rgb(216, 214, 214);
+/* padding: 20px; */
+/* text-align: center; */
+
+}
+#Portafolio h3, h4{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#Portafolio .contenedor{
+    display: flex;
+    justify-content: center;
+    /* si los objetos no caben se ponga abajo */
+    flex-wrap: wrap;
+}
+#Portafolio arcticle{
+    margin: 15px;
+
+}
+
+#Portafolio img{
+    width: 100%;
+    max-width: 280px;
+}

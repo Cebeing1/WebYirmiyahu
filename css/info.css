@@ -1,0 +1,12 @@
+#Servicios{
+    background: #040417 ;
+}
+#Servicios .contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.Servicios-pet{
+    margin: 20px;
+}

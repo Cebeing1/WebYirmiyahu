@@ -1,0 +1,61 @@
+#Servicios{
+    background: #040417 ;
+    color:white;
+    text-align: center;
+    font-family: open Arial, Helvetica, sans-serif;
+    /* padding: 2px; */
+    
+}
+#Servicios .contenedor{
+    /* display: flex; */
+    /* display: inline-block; */
+    flex-wrap: wrap;
+    justify-content: center;
+    line-height: 1.4em;
+    padding-bottom: 50px;
+    overflow: hidden;
+    /* padding: 6px 0; */
+    /* margin: 15px 0; */
+}
+
+.info-serv{
+    margin: 10px;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.info-serv h4, p{
+    /* padding:  2px 0 0; */
+    text-align: justify;
+    padding-bottom: 10px;
+}
+
+.info-serv h3 {
+font-size: 20px;
+}
+.info-serv h4, .info-serv p{
+font-size: 18px;
+box-sizing: border-box;
+}
+/* .info-serv  p{
+ font-size: 38px;
+} */
+.info-serv img{
+    width: 180px;
+    height: 180px;
+    margin: 2px;
+    /* align-items: center; */
+    /* border-radius: 50%;
+    border: 7px solid #fff; */
+
+}
+
+@media (min-width:480px){
+    .contenedor .info-serv{ 
+        /* width: 80%; */
+        vertical-align: baseline;
+    }
+}
+
+/* ----  ---- */
+

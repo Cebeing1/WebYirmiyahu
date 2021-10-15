@@ -1,0 +1,86 @@
+/* empieza 12:20 hasta */
+/* '#'cuando llamas desde su ID */
+/* '.'cuando llames desde su clase */
+
+#menu-bar{
+    display: none;
+}
+/* imagen que esta dentro del menuicon */
+.contenedor img{
+    float: left;
+    /* margin: 10px 0; */
+    width: 90px;
+    left: 15%;
+    padding: 4px;
+}
+/* label que esta dentro del header */
+header label{ 
+    float:right;
+    font-size: 25px;
+    margin: 10px 0;
+    cursor: pointer; 
+}
+/* para que desaparezca por un momento */
+.menu{
+    position: absolute;
+    /* para que empiese desde el superiorDerecho top y left en cero*/
+    top:50px;
+    left: 0;
+    /* el tamaño que sera el contenido del menu deplegable */
+    width: 100%;
+    /* el 100% del alto de la ventana "100vh" */
+    height: 100vh; 
+    /*fondo transparente*/
+    /* background: #ffdb2671;  */
+    background: rgba(207, 162, 13, 0.8);
+    transition: all 0.5s;
+    /* trasladar en un -100% se esconde hacia la derecha */
+    transform: translateX(-100%);
+    /* padding-top: 50px; */
+}
+.menu a {
+    display: block;
+    color: #fff;
+    height: 50px;
+    text-decoration: none;
+    padding: 15px;
+    font-size: 24px;
+    font-weight: bold;
+    /* borde transparente */
+    /* --border-bottom: 1px solid rgba(255, 255, 255, 0.3); --*/
+}
+/* cuando pase el mouse */
+.menu a:hover {
+    background: rgba(255, 255, 255, 0.3);
+}
+
+/* cuando se activa el check '~' (alt+26- pueda seleccionar el menu */
+#menu-bar:checked ~ .menu{
+    /* trasladar en un 0% se despaza hacia la izq desde un 50% */
+transform: translateX(0%);
+}
+.menu a:enabled ~ .menu{
+    transform: translateX(-100%); 
+}
+
+/* los cambios que se daran al ser web */
+@media(min-width:1024px){
+    .menu{
+        position: static;
+        width: auto;
+        height: auto;
+        transform: translate(0%);
+        float:right;
+        display: flex;
+        padding-top: 0;
+        background:#040417;
+        align-items: center;
+    }
+    .menu a{
+    border:none;
+    }
+    
+    header label{
+        display: none;
+    }
+}

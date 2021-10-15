@@ -1,0 +1,89 @@
+#pieDePagina .contenedor{
+    width: 100%;
+    
+   display: flex; 
+   flex-wrap: wrap;
+   justify-content:center;
+   /* text-align: center; */
+   padding-top: 5px;
+   padding-bottom: 5px;
+   margin: 0;
+}
+#pieDePagina {
+    background: #040417;
+}
+   
+.copy{
+    padding: 5px;
+    font-size: 10px;
+    color: #333;
+}
+.derec img{ 
+    width: 10%;
+
+}
+.sociales a{
+  border-radius: 30%;
+  padding: auto;
+  
+}
+#pieDePagina section{
+    padding: 10px 0%;
+}
+
+/* .correo{
+    padding: 10px  10px;
+} */
+.contenedor .icon-telef{
+margin-right: 50px;
+padding-left: 0;
+}
+#pieDePagina a, #pieDePagina p{
+     font-size: 10px;
+}
+#pieDePagina a, #pieDePagina li, p{
+    /* color: white; */
+    text-decoration: none;
+    /* justify-content: left; */
+}
+ .direccion li, p{
+    text-align: left;
+    display: inline-block;
+    padding: 10px;
+    color: #fff;} 
+iframe{
+display: none;
+ }
+ .direccion a{
+     color: #FFDC26;
+     
+ }
+
+h2{
+    font-size: 18px;
+    /* font-weight: 200; */
+    /* text-align: left; */
+    /* padding: 20px; */
+}
+#contacto a, h2{
+    color: #fff;
+}
+
+.contenedor nav{
+   list-style: none;
+   
+}
+/* para poner el mapa dentro de la pagina */
+iframe{
+    width: 50%;
+    height: 50%;
+}
+
+
+/* .triangulo {
+    width: 0; 
+    height: 0; 
+    border-left: 200px solid #f0ad4e;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent; 
+} */

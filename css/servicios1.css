@@ -1,0 +1,40 @@
+/* #fondoazul1{
+  background:#040417 ;
+  height: 200px;
+} */
+
+
+.fondoazul{
+    background:#040417 ;
+    padding: 60px 0;
+    height: 200px;
+    color: white;
+    margin: 0;
+    border: 0;
+    /* position: relative; */
+    /* z-index: -1; */
+  }
+  
+  #Fondoamarillo  {
+          width: 100%;
+          height: 200px;
+          /* padding: 60px 0 0 0; */
+          background: #FFDC26; 
+          /* overflow: hidden; */
+          /* position: relative; */
+          
+          /* z-index: -1; */
+        /* padding: 10%; */
+        /* transform: translateY(100%); */     
+  }
+
+  #ServiciosImag .mySwiper{
+    transform: translateY(-20%); 
+    /* transform: translateX(10%);  */
+    overflow: hidden; /* no sobrepase el area de trabajo */
+  }
+ 
+/* trasladar texto en la parte media de la imagen */
+/*.swiper-slide h5{
+  transform: translateY(-650%);
+} */

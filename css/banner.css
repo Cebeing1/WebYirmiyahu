@@ -1,0 +1,155 @@
+#banner{
+    margin-top: 50px;
+    position: relative;
+    margin-bottom: 0;
+    background: #040417;
+    padding: 0;
+    
+    /* text-align:  center; */
+}
+.portada{
+    width: 100%;
+    height: 100%;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+    opacity: 0.7;
+}
+/* es el que me mostrara mi banner animado */
+/* .portada{
+    width: 700px;
+    height: 300px;
+    margin: auto;
+
+} */
+
+/* contenedor se va a posicionar en base a banner */
+#banner .contenedor{
+ position: absolute;
+ /* width: 50%; */
+ top: 50%;
+ left:50%;
+ transform: translateX(-45%) translateY(-60%);
+ color: #fff;
+ align-content: center;
+}
+
+.uno{
+    display: none;
+}
+svg{
+    margin: 0;
+    padding: 0;
+    width: 50%;
+} 
+
+#banner .franja{
+    width: 100%;
+    transform: translateX(0%) translateY(-52%);
+    margin:0;
+    padding:0;
+    position: absolute;
+}
+
+#banner h3{
+    width: 100%;
+    justify-items: center;
+    font-size: 24px;
+    font-weight: bolder;
+    padding: 0 10px;
+    line-height: 1.4em;
+    transform: translateY(130%);
+    /* margin-bottom: 100px; */
+}
+
+
+/* flecha amarilla */
+#banner a {
+    /* display: none; */
+    display: block;
+    width: 100px;
+    color:#ffdb26;
+    text-decoration: none;
+    padding-top: 7px;
+    margin-top: 10px;
+    /* bottom: 0; */
+    /* --border: 3px solid #fff; --*/
+    /* margin-left: 40%; */
+    transform: translateX(125%);
+}
+
+#banner a:hover {
+    background: rgba(51, 51, 51, 0.3);
+}
+.banner1{
+    background: #040417;
+    color: #fff;
+    font-size: 23px;
+    padding: 60px 20px;
+    line-height: 1.4em;
+}
+
+/* los cambios que se daran al ser web */
+/* pantallas con resolucion de 480px */
+
+@media(min-width:480px){
+    body{
+        align-items: center;
+    }
+    .banner1{
+        padding: 60px 40px;
+    }
+       
+}
+@media(min-width:690px){
+    .banner1 {
+        display: none;
+    }
+}
+
+
+/* para tablets */
+ @media(min-width:691px){
+    #banner .uno{
+        display: flex;
+    }
+
+ 
+    /* #banner .contenedor{ */
+        /* transform: translateX(-45%) translateY(-110%); */
+    /* } */
+    /* texto */
+    #banner h2{
+        font-size: 38px;
+        padding-top: 20px;
+    }
+    /* flecha amarilla */
+    #banner a{
+        font-size: 27px;
+        height: 10vh;
+        transform: translateX(-700%) translateY(350%);
+        /* transform: translateX(-50%); */
+    } 
+}
+
+@media(min-width:1024px){
+
+    #banner h2{
+        width: 80%;
+        font-size: 50px;
+        padding: 0 20px;
+        top: 10px;
+    }
+    
+    #banner .contenedor{
+        /* transform: translateX(-48%) translateY(-70%); */
+    }
+    #banner a{
+        font-size: px;
+        /* height: 30vh; */
+        transform: translateX(-850%) translateY(80%);
+        /* transform: translateX(420%); */
+    }
+} 
+

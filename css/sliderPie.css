@@ -1,0 +1,43 @@
+.sliderPie{
+    width: 95%;
+    margin: 0px 20px;
+    /* para que no sobrepase el area de trabajo */
+    overflow: hidden; 
+}
+.sliderPie ul{
+    display: flex;
+    padding: 0;
+    width: 400%;
+        /* resumido en una sola linea */
+    animation: cambio 20s infinite alternate linear; 
+        /* animacion de que pase las imagenes */
+    /* animation: cambio 20s infinite;  */
+        /* animacion para que comienze desde el ultimo */
+    /* animation-direction: alternate; */
+        /* tipo animacion para que siempre tenga la misma velocidad */
+    /* animation-timing-function: linear;  */
+}
+.sliderPie li{
+    width: 100%;
+    list-style: none;
+}
+.sliderPie img{
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes cambio{
+    0% {margin-left: 0%;}
+    20% {margin-left: 0%;}
+
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+
+    50% {margin-left: -200% ;}
+    70% {margin-left: -200% ;}
+
+    75% {margin-left: -300% ;}
+    100% {margin-left: -300% ;}
+}
