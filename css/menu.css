@@ -67,9 +67,7 @@ header label{
     /* trasladar en un 0% se despaza hacia la izq desde un 50% */
 transform: translateX(-20%);
 }
-/* .menu a:enabled ~ .menu{
-    transform: translateX(-100%); 
-} */
+
 #menu-bar:checked ~  .icon-cancel{
     display:table;
     font-size: 20px;
