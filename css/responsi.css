@@ -33,7 +33,7 @@ header{
  
     width: 100%;
     height: 50px;
-    background: #040417;
+    /* background: #040417; */
     color:#ffff;
     /*que el menu se ponga pegado*/
     position: fixed;

@@ -2,7 +2,7 @@
 /* '#'cuando llamas desde su ID */
 /* '.'cuando llames desde su clase */
 
-#menu-bar{
+#menu-bar, .icon-cancel, .icon-constr1 {
     display: none;
 }
 /* imagen que esta dentro del menuicon */
@@ -13,6 +13,9 @@
     left: 15%;
     padding: 4px;
 }
+.contenedor .icon-constr{
+    width: 50px ;
+}
 /* label que esta dentro del header */
 header label{ 
     float:right;
@@ -22,12 +25,12 @@ header label{
 }
 /* para que desaparezca por un momento */
 .menu{
-    position: absolute;
+    position: relative;
     /* para que empiese desde el superiorDerecho top y left en cero*/
-    top:50px;
+    /* top:50px; */
     left: 0;
     /* el tamaño que sera el contenido del menu deplegable */
-    width: 100%;
+    width: 150%;
     /* el 100% del alto de la ventana "100vh" */
     height: 100vh; 
     /*fondo transparente*/
@@ -35,8 +38,9 @@ header label{
     background: rgba(207, 162, 13, 0.8);
     transition: all 0.5s;
     /* trasladar en un -100% se esconde hacia la derecha */
-    transform: translateX(-100%);
-    /* padding-top: 50px; */
+    transform: translateX(-150%);
+    padding-top: 50px;
+    z-index: -10;
 }
 .menu a {
     display: block;
@@ -49,6 +53,10 @@ header label{
     /* borde transparente */
     /* --border-bottom: 1px solid rgba(255, 255, 255, 0.3); --*/
 }
+.menu .icon-cancel{
+    text-align: right;
+   
+}
 /* cuando pase el mouse */
 .menu a:hover {
     background: rgba(255, 255, 255, 0.3);
@@ -57,15 +65,26 @@ header label{
 /* cuando se activa el check '~' (alt+26- pueda seleccionar el menu */
 #menu-bar:checked ~ .menu{
     /* trasladar en un 0% se despaza hacia la izq desde un 50% */
-transform: translateX(0%);
+transform: translateX(-20%);
 }
-.menu a:enabled ~ .menu{
+/* .menu a:enabled ~ .menu{
     transform: translateX(-100%); 
+} */
+#menu-bar:checked ~  .icon-cancel{
+    display:table;
+    font-size: 20px;
+}
+#menu-bar:checked ~  .icon-menu{
+    display: none;
+}
+#menu-bar:checked ~ .header{
+    width: 100%;
+    background:  rgba(207, 162, 13, 0.8);
 }
 
 /* los cambios que se daran al ser web */
 @media(min-width:1024px){
-    .menu{
+    /* .menu{
         position: static;
         width: auto;
         height: auto;
@@ -75,12 +94,12 @@ transform: translateX(0%);
         padding-top: 0;
         background:#040417;
         align-items: center;
-    }
+    } */
     .menu a{
     border:none;
     }
     
-    header label{
+    #Btcerrar{
         display: none;
     }
 }
