@@ -40,7 +40,7 @@ header label{
     /* trasladar en un -100% se esconde hacia la derecha */
     transform: translateX(-150%);
     padding-top: 50px;
-    z-index: -10;
+    /* z-index: -10; */
 }
 .menu a {
     display: block;
@@ -77,10 +77,10 @@ transform: translateX(-20%);
 #menu-bar:checked ~  .icon-menu{
     display: none;
 }
-#menu-bar:checked ~ .header{
+/* #menu-bar:checked ~ .header{
     width: 100%;
     background:  rgba(207, 162, 13, 0.8);
-}
+} */
 
 /* los cambios que se daran al ser web */
 @media(min-width:1024px){
